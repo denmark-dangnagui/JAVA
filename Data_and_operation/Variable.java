@@ -11,6 +11,6 @@ public class Variable {
 		
 		String c = "Hello World";
 		System.out.println(c);
+		
 	}
-
 }
