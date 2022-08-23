@@ -1,14 +1,12 @@
 import javax.swing.JOptionPane;
-
 import org.opentutorials.iot.DimmingLights;
-import 	org.opentutorials.iot.Elevator;
+import org.opentutorials.iot.Elevator;
 import org.opentutorials.iot.Lighting;
 import org.opentutorials.iot.Security;
 
 
 public class Ok_JavaGoinHomeinput {
-	
-	// parameter, 매개변
+	// parameter, 매개변수 
 	public static void main(String[] args) {
 		
 		String id = args[0];
@@ -22,7 +20,7 @@ public class Ok_JavaGoinHomeinput {
 		Security mySecurity = new Security(id);
 		mySecurity.off();
 		
-		// Light on
+		// Light on 
 		Lighting halllamp = new Lighting(id + "/ Hall Lamp");
 		halllamp.on();
 		
@@ -31,8 +29,6 @@ public class Ok_JavaGoinHomeinput {
 		
 		DimmingLights moodLamp = new DimmingLights( id +" moodLamp");
 		moodLamp.setBright(Double.parseDouble(bright));
-		moodLamp.on();
-		
-		
+		moodLamp.on();		
 	}
 }
