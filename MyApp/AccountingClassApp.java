@@ -1,19 +1,35 @@
-
-public class AccountingMethodApp {
-	public static double valueOfSupply;
-	public static double vatrate;
-	public static double expenseRate;
-
-	public static void main(String[] args) {
-		
-		valueOfSupply =10000.0;
-		vatrate = 0.1;
-		expenseRate = 0.3;
-		print();
-
+class Accounting{
+	public double valueOfSupply;
+	public double vatrate;
+	public double expenseRate;
+	
+	
+	public double getDividend1() {
+		return getIncome() * 0.5;
+	}
+	public double getDividend2() {
+		return getIncome() * 0.3;
+	}
+	public double getDividend3() {
+		return getIncome() * 0.2;
 	}
 
-	private static void print() {
+	public double getIncome() {
+		return valueOfSupply - getExpense();
+	}
+
+	public double getExpense() {
+		return valueOfSupply * expenseRate;
+	}
+
+	public double getTotal() {
+		return valueOfSupply + getVAT();
+	}
+
+	public double getVAT() {
+		return valueOfSupply * vatrate;
+	}
+	public void print() {
 		System.out.println("Value of supply : " + valueOfSupply);
 		System.out.println("VAT : " + getVAT() );
 		System.out.println("Total : " + getTotal() );
@@ -23,31 +39,36 @@ public class AccountingMethodApp {
 		System.out.println("Dividend 2 : " + getDividend2() );
 		System.out.println("Dividend 3 : " + getDividend3() );
 	}
+}
+public class AccountingClassApp {
+	
 
-	private static double getDividend1() {
-		return getIncome() * 0.5;
-	}
-	private static double getDividend2() {
-		return getIncome() * 0.5;
-	}
-	private static double getDividend3() {
-		return getIncome() * 0.5;
+	public static void main(String[] args) {
+		
+		
+		
+//		
+//		Accounting.valueOfSupply =10000.0;
+//		Accounting.vatrate = 0.1;
+//		Accounting.expenseRate = 0.3;
+//		Accounting.print();
+		
+		Accounting a1 = new Accounting();
+		a1.valueOfSupply = 10000.0;
+		a1.vatrate = 0.1;
+		a1.expenseRate = 0.3;
+		a1.print();
+		
+		Accounting a2 = new Accounting();
+		a2.valueOfSupply = 20000.0;
+		a2.vatrate = 0.1;
+		a2.expenseRate = 0.3;
+		a2.print();
+
 	}
 
-	private static double getIncome() {
-		return valueOfSupply - getExpense();
-	}
 
-	private static double getExpense() {
-		return valueOfSupply * expenseRate;
-	}
 
-	private static double getTotal() {
-		return valueOfSupply + getVAT();
-	}
-
-	private static double getVAT() {
-		return valueOfSupply * vatrate;
-	}
+	
 
 }
