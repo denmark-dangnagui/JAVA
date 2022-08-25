@@ -13,7 +13,7 @@ public class AuthApp {
 //			if(inputPass.equals(pass)) {
 //				System.out.println("Master!");	
 //			} else {
-//				System.out.println("Worng Password!");
+//				System.out.println("Wrong Password!");
 //			}
 //		} else {
 //			System.out.println("Who are you?");
@@ -24,7 +24,6 @@ public class AuthApp {
 		} else {
 			System.out.println("Who are you?");
 		}
-		
 	}
 
 }
