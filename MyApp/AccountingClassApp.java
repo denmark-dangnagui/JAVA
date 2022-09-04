@@ -41,34 +41,18 @@ class Accounting{
 	}
 }
 public class AccountingClassApp {
-	
-
 	public static void main(String[] args) {
-		
-		
-		
-//		
-//		Accounting.valueOfSupply =10000.0;
-//		Accounting.vatrate = 0.1;
-//		Accounting.expenseRate = 0.3;
-//		Accounting.print();
-		
+
 		Accounting a1 = new Accounting();
 		a1.valueOfSupply = 10000.0;
 		a1.vatrate = 0.1;
 		a1.expenseRate = 0.3;
-		a1.print();
+		a1.print(); 
 		
 		Accounting a2 = new Accounting();
 		a2.valueOfSupply = 20000.0;
 		a2.vatrate = 0.1;
 		a2.expenseRate = 0.3;
 		a2.print();
-
 	}
-
-
-
-	
-
 }

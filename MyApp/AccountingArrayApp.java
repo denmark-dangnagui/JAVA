@@ -32,6 +32,13 @@ public class AccountingArrayApp {
 		System.out.println("Dividend 3 : " + dividend3 );
 		
 		
+		
+		String[] members = {"이태민", "호날두" , "박지성"};
+		for(String e : members) {
+			System.out.println(e + "이 상담을 받았습니다.");
+		}
+		
+		
 	}
 
 }
