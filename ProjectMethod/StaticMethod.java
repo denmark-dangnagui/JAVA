@@ -18,10 +18,11 @@ class print{
 	
 }
 
-//method 가 instance 소속일 때는 static을 빼줘야 한다. 그런데 method가 class 소속일 때는 static을 써줘야 한다.
+// 중요 !! method 가 instance 소속일 때는 static을 빼줘야 한다. 그런데 method가 class 소속일 때는 static을 써줘야 한다.
+// static -> class method
+// no static -> instance method
 
-
-public class StaticMethod {
+public class StaticMethod {  
 
 	public static void main(String[] args) {
 //		print.a("-");
@@ -31,7 +32,6 @@ public class StaticMethod {
 		print t1 = new print();
 		t1.delimiter = "-";
 		t1.a();
-		t1.b();
 		print.c("$");
 		
 //		print.a("*");
@@ -41,8 +41,7 @@ public class StaticMethod {
 		t2.delimiter = "-";
 		t2.a();
 		t2.b();
-		
-		
+	
 	}
 
 }

@@ -1,4 +1,3 @@
-
 public class AccountingArrayLoopApp {
 
 	public static void main(String[] args) {
