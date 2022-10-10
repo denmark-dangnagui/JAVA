@@ -21,20 +21,10 @@ class dummycal implements Calculable{
 
 public class InterfaceApp {
 	public static void main(String[] args) {
-//		Realcal c = new Realcal();
-//		System.out.println(c.sum(1, 4));
-//		c.print();
-//		System.out.println(c.PI);
-		
-		
-		String[] ee = new String[3];
-		ee[0] = "이태민";
-		System.out.println(ee[0]);
-		ee[1] = "최유";
-		System.out.println(ee[1]);
-		
-		
-		
+		Realcal c = new Realcal();
+		System.out.println(c.sum(1, 4));
+		c.print();
+		System.out.println(c.PI);		
 	}
 
 }
